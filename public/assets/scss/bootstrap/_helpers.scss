@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
+
+[role="button"] {
+  cursor: pointer;
+}
+
+.nav-tabs {
+  .nav-link:hover {
+    text-decoration: none;
+  }
+}
+

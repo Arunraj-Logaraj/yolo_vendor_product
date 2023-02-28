@@ -1,0 +1,83 @@
+.mobile-menu {
+    .nav-link {
+        color: #191B32;
+        display: flex;
+        align-items: center;
+        padding: 16px !important;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        font-size: 15px;
+        font-weight: 600;
+        &.active,
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+            i {
+                color: #fff;
+            }
+        }
+        i {
+            color: #AEAFBE;
+            margin-right: 16px;
+        }
+    }
+    &-header {
+        border-bottom: 1px solid #ECECFC;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+    }
+    .close-btn {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        color: $primary;
+        &:focus {
+            outline: 0;
+        }
+    }
+    .navbar-collapse {
+        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+        display: block;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: -3100px;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+        z-index: 99;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        height: auto !important;
+        padding: 24px 16px;
+        overflow-y: scroll;
+        &.show {
+            left: 0;
+        }
+    }
+    .navbar-toggler {
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.user-menu {
+    .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        .secondary-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+    }
+    h3 {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

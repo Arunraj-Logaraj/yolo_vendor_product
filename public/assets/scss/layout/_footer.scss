@@ -1,0 +1,96 @@
+.footer {
+    background-color: #004A87;
+    padding-bottom: 40px;
+    color: #fffc;
+    &-heading {
+        color: #E4E4E4;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    &-content {
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+        padding: 24px 0;
+    }
+    &-text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &-link {
+        color: #C8CBCD;
+        display: inline-block;
+        margin-bottom: 8px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .secondary-title {
+        color: #fff;
+        font-size: 18px;
+    }
+    .social-link {
+        margin-right: 24px;
+        font-size: 20px;
+        &:hover {
+            color: #E4E4E4;
+            text-decoration: none;
+        }
+    }
+    .cta {
+        //background-image: url('../images/footer.png');
+        clip-path: polygon(0 0, 100% 0%, 100% 66%, 0% 100%);
+        background-color: $primary;
+        padding: 60px 0 80px 0;
+        color: #fff;
+        position: relative;
+        &:before {
+            content: "\e911";
+            position: absolute;
+            font-family: 'immigrow';
+            background-size: cover;
+            top: -50px;
+            left: -80px;
+            transform: rotate(63.34deg);
+            opacity: 0.2;
+            font-size: 200px;
+        }
+        &-text {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .btn {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+.copyrights-text {
+    color: rgba(255, 255, 255, 0.494);
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+@include media-breakpoint-down(md) {
+    .footer {
+        &-content {
+            text-align: left;
+        }
+        &-text {
+            font-size: 16px;
+        }
+        .social-link {
+            display: inline-block;
+            margin-bottom: 32px;
+        }
+    }
+    .footer-bottom-content {
+        flex-direction: column;
+    }
+    .footer-heading {
+        margin-bottom: 18px;
+    }
+}

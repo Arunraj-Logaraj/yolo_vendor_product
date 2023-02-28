@@ -1,0 +1,56 @@
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-width: 2px;
+}
+
+.btn-primary {
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: transparent;
+        color: $primary;
+        border: 2px solid $primary;
+    }
+}
+
+.custom-btn {
+    font-size: 18px;
+    color: $primary;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    transition: all 0.5s;
+    &:before {
+        content: "";
+        background-color: $secondary;
+        position: absolute;
+        left: -24px;
+        top: -10px;
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        z-index: -1;
+        transition: all 0.2s;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            width: calc(100% + 48px);
+            border-radius: 25px;
+        }
+    }
+}
+
+.btn-icon {
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+@include media-breakpoint-down(md) {
+    .btn {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}

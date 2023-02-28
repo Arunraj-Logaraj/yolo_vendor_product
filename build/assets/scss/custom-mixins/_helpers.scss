@@ -1,0 +1,11 @@
+@mixin display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin rounded-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}

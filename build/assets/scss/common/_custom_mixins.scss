@@ -1,0 +1,16 @@
+@mixin display-flex-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@mixin display-flex-align {
+    align-items: center;
+    display: flex;
+}
+
+@mixin truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

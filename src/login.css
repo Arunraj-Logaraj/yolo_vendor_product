@@ -1,0 +1,368 @@
+
+
+/* ======================================================================== */
+
+/*                      NOT RELATED TO THE TTUTORIAL                        */
+
+/* ======================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+  }
+  
+  :root {
+    --step--2: clamp(0.69rem, calc(0.58rem + 0.6vw), 1rem);
+    --step--1: clamp(0.83rem, calc(0.67rem + 0.81vw), 1.25rem);
+    --step-0: clamp(1rem, calc(0.78rem + 1.1vw), 1.56rem);
+    --step-1: clamp(1.2rem, calc(0.91rem + 1.47vw), 1.95rem);
+    --step-2: clamp(1.44rem, calc(1.05rem + 1.95vw), 2.44rem);
+    --step-3: clamp(1.73rem, calc(1.21rem + 2.58vw), 3.05rem);
+    --step-4: clamp(2.07rem, calc(1.39rem + 3.4vw), 3.82rem);
+    --step-5: clamp(2.49rem, calc(1.6rem + 4.45vw), 4.77rem);
+  
+    /* Font style */
+  
+    --ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  
+    /* Color style */
+  
+    /*
+  --color-primary:#c51350;
+  --color-secondary:#ff9a3c;
+  --color-body:#333;
+  --color-bg: #006600;
+  --color-primary-dark:#007f67;
+  --color-error:#cc3333;
+  --color-success:#4bb544;
+  --color-link:#cdcdcc;
+  --color-border:darkgrey;
+  --bs:#ffa857;
+  */
+  
+    --color-primary: #0092ca;
+    --color-secondary: #6dd5ed;
+    --color-primary-dark: #192294;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --color-link: #606470;
+    --color-link-dark: #3c4245;
+    --color-background: #f5f9ee;
+    --color-border-sc: #ececec;
+    --color-border-focus: #a9d7f6;
+    --color-border: #eeeeee;
+    --bs: #ffa857;
+    --color-dark-grey: #a4a3a3;
+    --gradient: linear-gradient(
+        135deg var(--color-primary),
+        var(--color-secondary)
+    );
+  
+    --main-color: #6dd5ed;
+    --secondary-color: #2193b0;
+    --gradient: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--secondary-color)
+    );
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: var(--ff-primary);
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+  }
+  
+  /* ======================================================================== */
+  
+  /*                      RELATED TO THE TTUTORIAL                        */
+  
+  /* ======================================================================== */
+  
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 485px;
+    height: 550px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 3rem 0;
+    overflow: hidden;
+    margin-top: 10rem;
+  }
+  
+  .form-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0 2.5rem;
+    text-align: center;
+  }
+  
+  .header {
+    color: var(--color-primary-dark);
+    font-size: var(--step-1);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  /* ----------------- The start of SideShift Design ----------------- */
+  
+  .sign-in-container {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+  }
+  
+  /* ----------------- The start of SideShift Design ----------------- */
+  
+  /* -----------------The start of Social media Design* ----------------- */
+  
+  
+  a.link,
+  a.login-link {
+    color: var(--color-link);
+  }
+  
+  a.link:hover,
+  a.login-link:hover {
+    color: var(--color-link-dark);
+    text-decoration: underline;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .button-input-group {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .group {
+    width: 100%;
+    height: 47px;
+    margin-bottom: 1.3rem;
+  }
+  
+  .group input,
+  .group button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+  }
+  
+  .group input {
+    border: 2px solid var(--color-border);
+    padding: 0 1.1rem;
+  }
+  
+  .group input::placeholder {
+    opacity: 0.8;
+  }
+  
+  .form-link.forgot {
+    margin: -0.3rem 0 1.5rem 0;
+  }
+  
+  /* -----------------The start of Validation* ----------------- */
+  
+  input:focus,
+  input:not(:placeholder-shown) {
+    background-color: var(--color-background);
+    border-color: var(--color-border-focus);
+  }
+  
+  input:focus,
+  input:placeholder-shown {
+    box-shadow: 0 0 0 2px var(--color-border-focus);
+  }
+  
+  input:focus:valid {
+    box-shadow: 0 0 0 2px var(--color-success);
+  }
+  
+  input:valid:not(:placeholder-shown) {
+    border-color: var(--color-success);
+  }
+  
+  input:focus:invalid {
+    box-shadow: 0 0 0 2px var(--color-error);
+  }
+  
+  input:invalid:not(:placeholder-shown) {
+    border-color: var(--color-error);
+  }
+  
+  /* -----------------The end of Validation* ----------------- */
+  
+  .group.button-group {
+    width: 70%;
+  }
+  
+  button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .group button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  .group button:hover {
+    background: var(--color-secondary);
+  }
+  
+  .group button:active {
+    transform: scale(0.95);
+  }
+  
+  .group button:focus {
+    outline: none;
+  }
+  
+  .group button.ghost {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 1.8rem;
+  }
+  
+  .group button.ghost:hover {
+    background: #fff;
+    color: var(--color-primary);
+  }
+  
+  
+  
+  @media (max-width: 767px) {
+    .form-container {
+        position: relative !important;
+    }
+    .container {
+        max-width: 100%;
+        height: 100%;
+        overflow: visible;
+        box-shadow: none;
+        background-color: #fff;
+        padding: 0;
+    }
+    .sign-in-container {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+    }
+   
+  }
+  

@@ -1,0 +1,47 @@
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 7px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: none;
+    background-color: #7c797a;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(239, 239, 239, 0.5);
+}
+
+ul {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+@include media-breakpoint-down(lg) {
+    body {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,41 @@
+    .section-space {
+        padding: 60px 0;
+    }
+    
+    .section-bottom-space {
+        padding-bottom: 80px;
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .mb-60 {
+        margin-bottom: 60px;
+    }
+    
+    .text-underline {
+        text-decoration: underline;
+    }
+    
+    .mt-60 {
+        margin-top: 60px;
+    }
+    
+    .px-small-1 {
+        padding: 0 4px;
+    }
+    
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+    
+    .sm-icon {
+        font-size: 14px;
+    }
+    
+    @include media-breakpoint-down(md) {
+        .section-space {
+            padding: 60px 0;
+        }
+    }

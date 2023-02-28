@@ -1,0 +1,51 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+$primary: #0076D6;
+$secondary: #000249;
+$dark: #1b1b1b;
+$light: #EFF9FF;
+$body-color: #717171;
+$text-color: #fff;
+$font-family-base: 'Nunito Sans',
+sans-serif;
+$border-color: rgba(0, 0, 0, 0.14);
+$color-lighten:rgba($text-color, 85%);
+$theme-colors: ();
+$theme-colors: map-merge(( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark), $theme-colors);
+// Links
+//
+// Style anchor elements
+$link-color: #fff;
+$link-decoration: none;
+$link-hover-color: $secondary;
+$link-hover-decoration: underline;
+// Components
+//
+// Define common padding and border radius sizes and more.
+$headings-line-height: 1.5;
+$line-height: $headings-line-height;
+$border-radius: 0.5rem;
+$border-radius-lg: 0.6rem;
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1200px);
+$input-btn-padding-y: 0.625rem;
+$input-btn-padding-x: 1rem;
+$input-btn-line-height: 1;
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+$btn-line-height: $input-btn-line-height;
+$input-btn-padding-y-lg: .75rem;
+$input-btn-padding-x-lg: 2rem;
+$input-btn-line-height-lg: 1.25;
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+$btn-line-height-lg: $input-btn-line-height-lg;
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge( ( 0: 0, 1: ( $spacer * 0.5), 2: ( $spacer * 1), 3: ( $spacer * 1.5), 4: ( $spacer * 2), 5: ( $spacer * 2.5)), $spacers);
+//////// custom padding size //////
+$pad-sm: 24px;
+$pad-md: 32px;
+$pad-lg: 40px;

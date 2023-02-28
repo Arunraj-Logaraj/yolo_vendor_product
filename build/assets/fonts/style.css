@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'yolo';
+  src:  url('fonts/yolo.eot?30clb6');
+  src:  url('fonts/yolo.eot?30clb6#iefix') format('embedded-opentype'),
+    url('fonts/yolo.ttf?30clb6') format('truetype'),
+    url('fonts/yolo.woff?30clb6') format('woff'),
+    url('fonts/yolo.svg?30clb6#yolo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'yolo' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-profile:before {
+  content: "\e912";
+}
+.icon-dashboard:before {
+  content: "\e913";
+}
+.icon-prev:before {
+  content: "\e914";
+}
+.icon-hamburger:before {
+  content: "\e915";
+}
+.icon-options:before {
+  content: "\e916";
+}
+.icon-Group-50:before {
+  content: "\e917";
+}
+.icon-logout:before {
+  content: "\e918";
+}
+.icon-bills:before {
+  content: "\e919";
+}
+.icon-users:before {
+  content: "\e91a";
+}
+.icon-password:before {
+  content: "\e91b";
+}
+.icon-l-arrow:before {
+  content: "\e901";
+}
+.icon-down-arrow:before {
+  content: "\e902";
+}
+.icon-call:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-locate:before {
+  content: "\e905";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-youtube:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-food:before {
+  content: "\e909";
+}
+.icon-share:before {
+  content: "\e90b";
+}
+.icon-unlock:before {
+  content: "\e90c";
+}
+.icon-deposit:before {
+  content: "\e90d";
+}
+.icon-dine:before {
+  content: "\e90e";
+}
+.icon-gender:before {
+  content: "\e90f";
+}
+.icon-rupee:before {
+  content: "\e911";
+}
+.icon-bed:before {
+  content: "\e910";
+}
+.icon-option:before {
+  content: "\e900";
+}
+.icon-placeholder:before {
+  content: "\e90a";
+}
+.icon-whatsapp:before {
+  content: "\e939";
+}
